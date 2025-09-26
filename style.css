@@ -125,7 +125,7 @@ h3 {
 a {
   text-decoration: none;
   color: var(--brand);
-  padding: .4rem .7rem;
+  padding: .1rem .1rem;
   border-radius: var(--radius-sm);
 }
 
