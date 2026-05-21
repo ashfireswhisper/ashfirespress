@@ -24,7 +24,7 @@
   --shadow: 0 6px 18px rgba(29, 19, 53, .08);
   --radius: 14px;
   --radius-sm: 10px;
-  --max: 960px;
+  --max: 1200px;
 }
 
 html {
@@ -160,7 +160,7 @@ footer {
 
 main,
 header p {
-  max-width: 900px;
+  max-width: var(--max);
   margin: 0 auto;
   padding: 1rem;
 }
@@ -213,8 +213,8 @@ footer {
   font-size: 0.9rem;
   color: #777;
   text-align: center;
-  padding: 2rem 1rem;
-  background-color: #f5f2f8;
+  padding: 2rem 1rem;/*
+  background-color: #f5f2f8;*/
   border-top: 1px solid #ddd;
 }
 
