@@ -1,9 +1,19 @@
 document.addEventListener("DOMContentLoaded", () => {
+  const currentYear = new Date().getFullYear();
 
   const toggle = document.querySelector('.nav-toggle');
   const links = document.querySelector('.mobile-menu');
-  toggle.addEventListener('click', () => {
-    links.classList.toggle('active');
+  if (toggle && links) {
+    toggle.addEventListener('click', () => {
+      links.classList.toggle('active');
+    });
+  }
+
+  document.querySelectorAll('footer p').forEach((paragraph) => {
+    const updated = paragraph.innerHTML.replace(/(&copy;|©)\s*\d{4}/, `&copy; ${currentYear}`);
+    if (updated !== paragraph.innerHTML) {
+      paragraph.innerHTML = updated;
+    }
   });
 
   const syncBookOverviewCovers = () => {
