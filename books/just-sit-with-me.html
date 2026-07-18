@@ -47,6 +47,31 @@
 
     .hero-book-copy {
       background: #CDAD75;
+      align-items: center;
+      text-align: center;
+    }
+
+    .hero-supporting-copy {
+      color: #000000;
+      text-align: center;
+    }
+
+    .hero-book-copy .subtitle {
+      color: #1d1824;
+    }
+
+    .hero-book-copy .buttons .button {
+      background: #1d3a75;
+      border-color: rgba(29, 58, 117, 0.55);
+      color: #ffffff;
+      box-shadow: 0 10px 24px rgba(29, 24, 36, 0.16);
+    }
+
+    .hero-book-copy .buttons .button:hover {
+      background: #162f5f;
+      border-color: rgba(22, 47, 95, 0.7);
+      color: #ffffff;
+      transform: translateY(-2px);
     }
 
     main,
@@ -74,14 +99,14 @@
     .book-info-row {
       display: grid;
       grid-template-columns: minmax(16rem, 0.8fr) minmax(0, 1.6fr);
-      gap: clamp(2rem, 5vw, 5rem);
+      gap: clamp(1.5rem, 4vw, 3.25rem);
       align-items: start;
-      margin-block: clamp(3rem, 7vw, 6rem);
+      margin-block: clamp(2.25rem, 5vw, 4rem);
     }
 
     .book-info-row>section {
       min-width: 0;
-      padding: 1.4rem 1.35rem;
+      padding: 1.1rem 1.15rem;
       border: 1px solid rgba(29, 24, 36, 0.12);
       border-radius: 24px;
       background: rgba(255, 255, 255, 0.16);
@@ -90,7 +115,7 @@
 
     .book-info-row h2 {
       margin-top: 0;
-      margin-bottom: 1rem;
+      margin-bottom: 0.8rem;
       font-size: clamp(1.8rem, 2.4vw, 2.6rem);
     }
 
@@ -102,7 +127,7 @@
       display: grid;
       grid-template-columns: minmax(7.5rem, 0.8fr) minmax(0, 1.2fr);
       gap: 0.85rem;
-      padding-block: 0.7rem;
+      padding-block: 0.55rem;
       border-bottom: 1px solid rgba(29, 24, 36, 0.14);
     }
 
