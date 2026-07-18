@@ -39,6 +39,12 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
+  <url>
+    <loc>https://press.ashfires.com/books/between-us-series.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
   <!-- Papers index -->
   <url>
     <loc>https://press.ashfires.com/papers/index.html</loc>
