@@ -40,6 +40,126 @@
 
     gtag('config', 'G-Q0QD8HSKP3');
   </script>
+  <style>
+    body {
+      background: #e6dbca;
+    }
+
+    .hero-book-copy {
+      background: #CDAD75;
+    }
+
+    main,
+    main em,
+    section p,
+    section h2,
+    section h2 em,
+    .workbook-label {
+      color: #1D1824;
+    }
+
+    section p a,
+    footer p a,
+    main a {
+      color: #1d3a75;
+      text-decoration: underline;
+    }
+
+    section p em,
+    section p strong,
+    footer p {
+      color: #000000;
+    }
+
+    .book-info-row {
+      display: grid;
+      grid-template-columns: minmax(16rem, 0.8fr) minmax(0, 1.6fr);
+      gap: clamp(2rem, 5vw, 5rem);
+      align-items: start;
+      margin-block: clamp(3rem, 7vw, 6rem);
+    }
+
+    .book-info-row>section {
+      min-width: 0;
+      padding: 1.4rem 1.35rem;
+      border: 1px solid rgba(29, 24, 36, 0.12);
+      border-radius: 24px;
+      background: rgba(255, 255, 255, 0.16);
+      box-shadow: 0 16px 34px rgba(29, 24, 36, 0.06);
+    }
+
+    .book-info-row h2 {
+      margin-top: 0;
+      margin-bottom: 1rem;
+      font-size: clamp(1.8rem, 2.4vw, 2.6rem);
+    }
+
+    .book-details dl {
+      margin: 0;
+    }
+
+    .book-details dl>div {
+      display: grid;
+      grid-template-columns: minmax(7.5rem, 0.8fr) minmax(0, 1.2fr);
+      gap: 0.85rem;
+      padding-block: 0.7rem;
+      border-bottom: 1px solid rgba(29, 24, 36, 0.14);
+    }
+
+    .book-details dt {
+      font-weight: 700;
+      color: #1d1824;
+    }
+
+    .book-details dd {
+      margin: 0;
+      color: #1d1824;
+    }
+
+    .book-about p {
+      max-width: 68ch;
+      color: #1d1824;
+      line-height: 1.75;
+    }
+
+    .book-about .lead {
+      font-size: clamp(1.1rem, 1rem + 0.4vw, 1.35rem);
+      line-height: 1.55;
+      color: #1d1824;
+    }
+
+    .book-about .lead + p {
+      margin-top: 1rem;
+    }
+
+    @media (max-width: 760px) {
+      .book-info-row {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+
+      .book-info-row > section {
+        padding: 1.2rem 1rem;
+      }
+    }
+
+    @media (max-width: 420px) {
+      .book-details dl>div {
+        grid-template-columns: 1fr;
+        gap: 0.2rem;
+      }
+    }
+    .book-details dl > div:last-child {
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .book-details dt,
+    .book-details dd {
+      line-height: 1.15;
+    }
+
+  </style>
 </head>
 
 <body>
@@ -64,92 +184,201 @@
 
   <article class="article">
     <main>
-      <section class="hero">
-        <div class="content">
+      <section class="hero hero-book">
+        <div class="hero-book-copy">
+          <p class="hero-kicker"></p>
           <h1>Just Sit With Me</h1>
-          <p><em>When Understanding Is Misunderstood</em></p>
-        </div>
-      </section>
-      <section class="book-overview">
-        <div class="book-overview-copy">
-          <h2>Book Details</h2>
-          <p><strong>Author:</strong> M. Ian Niad</p>
-          <p><strong>Published:</strong> July 05, 2026<br />
-            <strong>Published by:</strong> Ashfires Press<br />
-            <strong>Paperback ISBN:</strong> <a href="https://isbnsearch.org/isbn/9798999713315"
-              target="_blank">979-8999713315</a><br />
-            <strong>Hardcover ISBN:</strong> <a href="https://www.goodreads.com/book/show/255003497-just-sit-with-me"
-              target="_blank">979-8999713346</a><br />
-            <strong>Subtitle:</strong> When Understanding Is Misunderstood
+          <p class="subtitle">When Understanding Is Misunderstood</p>
+          <p class="hero-supporting-copy">
+            A book about what happens when a person’s lived experience is heard, corrected, or explained away before
+            it has been truly received.
           </p>
+          <br>
+          <div class="buttons">
+            <a class="button" href="#buy">Where to Buy</a>
+            <a class="button" href="#workbook">Workbook</a>
+          </div>
         </div>
-        <figure class="book-overview-cover">
-          <img src="images/cover_Just_Sit_With_Me.jpeg" alt="Just Sit With Me book cover" class="book-cover" />
+        <div class="hero-book-media">
+          <img src="images/hero_jswm_trio.jpg" alt="Just Sit With Me books displayed together" class="hero-image" />
+        </div>
+      </section>
+
+      <section class="quote-block">
+        <em>What happens when a listener fails to receive your lived experience with precision and care?</em>
+      </section>
+
+
+      <div class="book-info-row">
+        <section class="book-details">
+          <h2>Book Details</h2>
+
+          <dl>
+            <div>
+              <dt>Author</dt>
+              <dd>M. Ian Niad</dd>
+            </div>
+
+            <div>
+              <dt>Published</dt>
+              <dd>July 05, 2026</dd>
+            </div>
+
+            <div>
+              <dt>Published by</dt>
+              <dd>Ashfires Press</dd>
+            </div>
+
+            <div>
+              <dt>Paperback ISBN</dt>
+              <dd>979-8999713315</dd>
+            </div>
+
+            <div>
+              <dt>Hardcover ISBN</dt>
+              <dd>979-8999713346</dd>
+            </div>
+
+            
+          </dl>
+        </section>
+
+        <section class="book-about">
+          <h2>What <em>Just Sit With Me</em> Is About</h2>
+
+          <p class="lead">
+            <em>Just Sit With Me</em> is a short, personal book about failed understanding-how it can leave people
+            lonely, destabilized, and unsure of their own reality.
+          </p>
+
+          <p>
+            Drawing from lived experience, neurodivergent insight, and original research, M. Ian Niad explores the
+            difference between hearing someone's words and actually receiving what those words are trying to carry.
+          </p>
+
+          <p>
+            This book is for anyone who has ever needed someone to stop fixing, stop explaining, and simply sit with
+            them.
+          </p>
+        </section>
+      </div>
+
+      <section id="buy" class="buy-section">
+        <h2>Where to Buy</h2>
+        <p class="buy-intro">Choose the format that fits you best.</p>
+        <div class="buy-links">
+          <a href="https://amzn.to/4goGtHo" target="_blank">Hardcover <span>(USA)</span></a>
+          <a href="https://amzn.to/44Mezhp" target="_blank">Paperback <span>(USA)</span></a>
+          <a href="https://amzn.eu/d/0d3ssPvt?tag=ashfirespress-20" target="_blank">Paperback <span>(UK)</span></a>
+          <a href="https://amzn.to/4vdNgY2" target="_blank">Kindle <span>(USA)</span></a>
+          <a href="https://www.goodreads.com/book/show/255003497-just-sit-with-me" target="_blank">Goodreads</a>
+        </div>
+        <p class="buy-note">Affiliate links marked with <span class="disclaimer">#commissionsearned</span>.</p>
+      </section>
+
+      <section id="workbook" class="workbook-card">
+        <figure class="workbook-card-media">
+          <img src="images/jswm_workbook.jpg" alt="Inside pages of the Just Sit With Me workbook"
+            class="workbook-photo" />
         </figure>
-      </section>
-      <section>
-        <h2>Description</h2>
-        <p>What happens when a listener fails to receive your lived experience with precision and care?</p>
-        <p><em>Just Sit With Me</em> is a short, deeply personal book about the harm caused by failed understanding.
-          It explores what happens when your lived experience is heard, interpreted, corrected, or explained away
-          before it has been truly received.</p>
-        <p>That kind of failure is not only frustrating. Over time, it can become lonely, destabilizing, and exhausting.
-          You may begin to over-explain ordinary experiences, rehearse simple truths as if preparing legal testimony,
-          or search for outside confirmation before trusting your own reality.</p>
-        <p>Drawing from lived experience, neurodivergent insight, and original research, M. Ian Niad explores the
-          difference between hearing someone’s words and receiving the reality those words are trying to carry.</p>
-        <p>This book is for anyone who has ever needed someone to stop fixing, stop explaining, stop moving ahead
-          and just sit with them.</p>
-      </section>
-
-      <section id="access">
-        <h2>Access</h2>
-        <p>
-          📚 Purchase Hardcover Edition on Amazon | <a href="https://amzn.to/4goGtHo" target="_blank">(USA)</a> | <span
-            class="disclaimer">#commissionsearned</span><br />
-          📚 Purchase Paperback Edition on Amazon | <a href="https://amzn.to/44Mezhp" target="_blank">(USA)</a> | <a
-            href="https://amzn.eu/d/0d3ssPvt?tag=ashfirespress-20" target="_blank">(UK)</a> | <span
-            class="disclaimer">#commissionsearned</span><br />
-          📱 Purchase Kindle Edition on Amazon | <a href="https://amzn.to/4vdNgY2" target="_blank">(USA)</a> | <span
-            class="disclaimer">#commissionsearned</span><br />
-          <a href="https://www.goodreads.com/book/show/255003497-just-sit-with-me" target="_blank">📚 Browse on
-            GoodReads</a><br />
-        </p>
+        <div class="workbook-card-copy">
+          <p class="workbook-label">Workbook</p>
+          <h2>Just Sit With Me: Reflection Workbook</h2>
+          <p><strong>A guided companion for people who have felt misunderstood before they felt heard.</strong></p>
+          <p>
+           Through 31 thoughtful exercises, the workbook explores what understanding means, why conversations break down, what helps people feel safe enough to open up, and what meaningful support can actually feel like.
+          </p>
+          <p>
+            Each section connects to the themes of <em>Just Sit With Me: When Understanding Is Misunderstood</em>, but
+            it can also be used on its own. Write a little or a lot. Skip what does not fit. Return when you are
+            ready.
+          </p>
+          <p><strong>This space is yours.</strong></p>
+        </div>
       </section>
 
-      <section>
+      <section id="faq" class="faq-section">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>
+              <h3>What is <em>Just Sit With Me</em> about?</h3>
+            </summary>
+            <div class="faq-answer">
+              <p>It is about what happens when someone’s lived experience is heard, corrected, interpreted, or explained away before it has been fully received.</p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>
+              <h3>Is the workbook separate from the book, and do I need to read the book first?</h3>
+            </summary>
+            <div class="faq-answer">
+              <p>The workbook is a separate companion, but you do not need to read the book first. It can be used on its own or alongside the book for deeper reflection.</p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>
+              <h3>Who is this for?</h3>
+            </summary>
+            <div class="faq-answer">
+              <p>It is for anyone who has felt misunderstood, over-explained themselves, struggled to feel heard, or wanted more thoughtful ways to understand themselves and others.</p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>
+              <h3>How should I use the workbook?</h3>
+            </summary>
+            <div class="faq-answer">
+              <p>Move at your own pace. Write a little or a lot, skip anything that does not fit, and return when you are ready.
+              </p>
+            </div>
+          </details>
+        </div>
+      </section>
+
+      <section class="essay-section">
         <h2>Essays from the World of <em>Just Sit With Me</em></h2>
-        <p><em>Just Sit With Me</em> is not only a book. It is the source text for an ongoing body of reflections on
-          reception, misunderstanding, pressure, relational repair, and the conditions that make human understanding
-          possible.
-        </p>
-        <p>Start with:
-<br><br>
-        <em><a href="https://www.presencenotprompts.com/p/when-heat-steals-the-room" target="_blank">When Heat Steals the Room</a></em><br>
-        A reflection on heat, irritability, nervous system pressure, and why people sometimes lose access to patience
-        before a conversation even begins.
-        </p>
-        <p>
-          <strong>More essays will be added as the work continues.</strong>
-        </p>
+        <p><em>Just Sit With Me</em> is not only a book. It is also the source text for an ongoing body of reflections
+          on reception, misunderstanding, pressure, relational repair, and the conditions that make human
+          understanding possible.</p>
+        <div class="essay-grid">
+          <div class="essay-card">
+            <p class="essay-label">Featured essay</p>
+            <h3><a href="https://www.presencenotprompts.com/p/when-heat-steals-the-room" target="_blank">When Heat
+                Steals the Room</a></h3>
+            <p>A reflection on heat, irritability, nervous system pressure, and why people sometimes lose access to
+              patience before a conversation even begins.</p>
+          </div>
+          <div class="essay-card">
+            <p class="essay-label">Featured essay</p>
+            <h3><a href="https://open.substack.com/pub/presencenotprompts/p/what-are-we-calling-loneliness"
+                target="_blank">A Human Conversation Is Not Automatically Human Connection</a></h3>
+            <p>A reflection on why contact, conversation, and company do not always produce the feeling of being truly
+              understood.</p>
+          </div>
+          <div class="essay-card">
+            <p class="essay-label">Featured essay</p>
+            <h3><a href="https://open.substack.com/pub/presencenotprompts/p/before-you-tell-someone-to-choose"
+                target="_blank">Before You Tell Someone to Choose Hope</a></h3>
+            <p>An essay about what happens when encouragement arrives before a person’s pain has been fully
+              received.</p>
+          </div>
+        </div>
+        <p class="essay-note"><strong>More essays will be added as the work continues.</strong></p>
       </section>
-      <section id="citation">
+      <section id="citation" class="citation-section">
         <h2>How to Cite</h2>
-        <p><strong>APA:</strong> Niad, M. I. (2026). <em>Just Sit With Me: When Understanding Is
-            Misunderstood</em>.
-          Ashfires Press. ISBN 979-8-9997133-1-5</p>
-        <p><strong>Chicago:</strong> Niad, M. Ian. <em>Just Sit With Me: When Understanding Is Misunderstood</em>.
-          Ashfires Press, 2026. ISBN 979-8-9997133-1-5</p>
-      </section>
-      <section id="keywords">
-        <h2>Keywords</h2>
-        <p>Just Sit With Me, misunderstanding, presence, listening, support, relational care, communication</p>
+        <div class="citation-lines">
+          <p><strong>APA:</strong> Niad, M. I. (2026). <em>Just Sit With Me: When Understanding Is
+              Misunderstood</em>. Ashfires Press. ISBN 979-8-9997133-1-5</p>
+          <p><strong>Chicago:</strong> Niad, M. Ian. <em>Just Sit With Me: When Understanding Is Misunderstood</em>.
+            Ashfires Press, 2026. ISBN 979-8-9997133-1-5</p>
+        </div>
       </section>
 
-
-      <p>
+      <div align="center">
         <a href="index.html">&larr; Return to Books</a><br />
-      </p>
+      </div>
     </main>
   </article>
   <footer>
@@ -160,6 +389,19 @@
     <p><a href="mailto:press@ashfires.com">press@ashfires.com</a> | <a href="https://ashfires.com">ashfires.com</a>
     </p>
   </footer>
+  <script>
+    document.querySelectorAll('#faq details').forEach((item) => {
+      item.addEventListener('toggle', () => {
+        if (!item.open) return;
+
+        document.querySelectorAll('#faq details').forEach((other) => {
+          if (other !== item) {
+            other.open = false;
+          }
+        });
+      });
+    });
+  </script>
 </body>
 
 </html>
