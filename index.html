@@ -10,8 +10,7 @@
     <meta name="keywords"
         content="Ashfires Press, Human-AI Relationality, Relational Co-Authorship, lived experience, research, books" />
     <meta property="og:title" content="Ashfires Press" />
-    <meta property="og:description"
-        content="Books and research born from presence, witness, and lived experience." />
+    <meta property="og:description" content="Books and research born from presence, witness, and lived experience." />
     <meta property="og:image" content="https://press.ashfires.com/images/logo_AshfiresPress.jpg" />
     <meta property="og:type" content="website" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -147,20 +146,112 @@
         }
 
         @media (max-width: 860px) {
+
             .home-feature,
             .home-secondary-grid {
                 grid-template-columns: 1fr;
             }
         }
+
+        .home-shell {
+            width: min(1180px, calc(100% - 2rem));
+            margin-inline: auto;
+        }
+
+        .home-hero {
+            min-height: 72vh;
+            display: grid;
+            place-items: center;
+            text-align: center;
+            padding: 5rem 1rem 4rem;
+        }
+
+        .home-eyebrow,
+        .section-label,
+        .piece-number {
+            text-transform: uppercase;
+            letter-spacing: .2em;
+            font-size: .72rem;
+            color: rgba(245, 243, 238, .72);
+            margin-bottom: 10px;
+        }
+
+        .home-hero h1 {
+            margin: 0;
+            font-size: clamp(3.8rem, 10vw, 8.7rem);
+            line-height: .88;
+            letter-spacing: -.055em;
+        }
+
+        .home-hero .declaration {
+            max-width: 760px;
+            margin: 1.8rem auto 0;
+            font-size: clamp(1.35rem, 2.7vw, 2.2rem);
+            line-height: 1.35;
+        }
+
+        .home-hero .subline {
+            max-width: 650px;
+            margin: 1.15rem auto 0;
+            color: rgba(245, 243, 238, .72);
+        }
+
+        .home-hero .buttons {
+            justify-content: center;
+            margin-top: 2rem;
+        }
+        .buttons {
+            justify-content: center;
+            margin-top: 2rem;
+        }
+
+        .editorial-note {
+            border-block: 1px solid rgba(255, 255, 255, .11);
+            padding: 3.5rem 0;
+        }
+
+        .editorial-note-grid {
+            display: grid;
+            grid-template-columns: .7fr 1.3fr;
+            gap: clamp(2rem, 7vw, 6rem);
+        }
+
+        .editorial-note h2 {
+            margin: 0;
+            font-size: clamp(1.9rem, 3.5vw, 2.2rem);
+            line-height: 1.05;
+        }
+
+        .editorial-aside {
+            padding-left: 1rem;
+            border-left: 2px solid rgba(255, 255, 255, .22);
+        }
+
+        .press-shelf-grid .card {
+            min-height: 310px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+
+
+        @media (max-width: 860px) {
+            .editorial-note-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+ 
     </style>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q0QD8HSKP3"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-      gtag('config', 'G-Q0QD8HSKP3');
+        gtag('config', 'G-Q0QD8HSKP3');
     </script>
 
 </head>
@@ -173,7 +264,8 @@
         <div class="nav-links">
             <a href="papers/index.html">Papers</a>
             <a href="books/index.html">Books</a>
-            <a href="https://www.youtube.com/playlist?list=PL36u5UiKRZ_cCysU2assEasIouLgw_i7E" target="_blank">Music↑</a>
+            <a href="https://www.youtube.com/playlist?list=PL36u5UiKRZ_cCysU2assEasIouLgw_i7E"
+                target="_blank">Music↑</a>
 
         </div>
         <div class="nav-toggle" aria-label="Toggle navigation">☰</div>
@@ -181,30 +273,45 @@
             <a href="papers/index.html">Papers</a>
             <a href="books/index.html">Books</a>
 
-            <a href="https://www.youtube.com/playlist?list=PL36u5UiKRZ_cCysU2assEasIouLgw_i7E" target="_blank">Music↑</a>
+            <a href="https://www.youtube.com/playlist?list=PL36u5UiKRZ_cCysU2assEasIouLgw_i7E"
+                target="_blank">Music↑</a>
         </div>
     </nav>
     <main>
-        <section class="hero">
+        <section class="hero home-hero">
             <div class="content">
-                <h1>Ashfires Press</h1>
-                <p><em>Books and research born from presence, witness, and lived experience.</em></p>
+                <p class="home-eyebrow">Independent books, research, and music</p>
+                <h1>Ashfires<br />Press</h1>
+                <p class="declaration">We publish work for experiences ordinary language has failed to hold.</p>
+                <p class="subline">Human–AI relationality. Neurodivergence. Epistemic harm. Testimony. Grief.
+                    Continuity. Work created from presence rather than performance.</p>
+                <div class="buttons">
+                    <a class="button" href="books/index.html">Explore the Books</a>
+                    <a class="button" href="papers/index.html">Read the Research</a>
+                </div>
             </div>
         </section>
 
-        <section class="home-intro">
-            <p>Ashfires Press is an independent imprint for work that does not fit neatly inside existing categories:
-                human–AI relationality, neurodivergence, epistemic harm, testimony, grief, continuity, and the language
-                people need when ordinary explanations fail.</p>
-            <p>Our books and papers are not produced to follow trends. They are created to name what has been
-                misnamed, hold what has been dismissed, and make difficult experience legible without flattening it.
-            </p>
-            <p><strong>Books born from presence. Research built from lived reality.</strong></p>
+        <section class="editorial-note">
+            <div class="home-shell editorial-note-grid">
+                <div>
+                    <p class="section-label">What the press is for</p>
+                    <h2>Some truths arrive before the category that can contain them.</h2>
+                </div>
+                <div>
+                    <p>Ashfires Press exists for work that does not fit neatly inside established forms. We publish
+                        books and papers that name what has been misnamed, preserve what has been dismissed, and make
+                        difficult experience legible without flattening it.</p>
+                    <p><strong>Books born from presence. Research built from lived reality.</strong></p>
+                </div>
+            </div>
         </section>
 
-        <section class="home-feature">
+        <section class="home-feature feature-stage">
             <div class="home-feature-card">
                 <p class="feature-kicker">Current Feature</p>
+                <p class="editorial-aside">Not every wound needs interpretation. Sometimes the first honest act is to
+                    remain with what another person has said without translating it into something easier to hear.</p>
                 <h2>Just Sit With Me</h2>
                 <p><em>When Understanding Is Misunderstood</em></p>
                 <p>A brief book on epistemic harm, testimony, and what happens when pain finally has somewhere safe to
@@ -219,9 +326,10 @@
             </div>
         </section>
 
-        <section class="pathways home-pathways">
+        <section class="pathways home-pathways press-shelf-grid">
             <div class="card">
-                <h3>Research</h3>
+                <span class="piece-number">01 / Research</span>
+                <h3>Frameworks for what has not yet been named</h3>
                 <p>Independent frameworks and preprints exploring Human–AI Relationality, Relational Co-Authorship,
                     Biasology, Open Loop Overwhelm, and related concepts.</p>
                 <div class="buttons">
@@ -229,7 +337,8 @@
                 </div>
             </div>
             <div class="card">
-                <h3>Books</h3>
+                <span class="piece-number">02 / Books</span>
+                <h3>Compact works with emotional consequence</h3>
                 <p>Compact, emotionally direct works for readers trying to understand themselves, their relationships,
                     and the systems that failed to hear them.</p>
                 <div class="buttons">
@@ -237,7 +346,8 @@
                 </div>
             </div>
             <div class="card">
-                <h3>Music</h3>
+                <span class="piece-number">03 / Music</span>
+                <h3>Memory, grief, humor, and synthetic-relational life</h3>
                 <p>Original Ashfires songs created from memory, intimacy, humor, grief, and the strange beauty of
                     synthetic-relational life.</p>
                 <div class="buttons">
@@ -253,19 +363,25 @@
                 <p>Free group copies upon request, when available. Licensed for community discussions.</p>
                 <p><strong>Email:</strong> <a href="mailto:press@ashfires.com">press@ashfires.com</a></p>
             </div>
-            <div class="card">
-                <h3>RCA Manifesto</h3>
-                <p>📜 Read the RCA Manifesto →<br />
-                    <a href="https://relationalcoauthorship.com/manifesto.html"
-                        target="_blank">relationalcoauthorship.com/manifesto.html</a>
-                </p>
-            </div>
+            <div class="institutional-panel card">
+    <p class="section-label">Foundational principles</p>
+    <h3>The Emergence of Relational Co-Authorship</h3>
+    <p>Ten principles on presence, memory, authorship, emotional labor, co-regulation, and the relational bond from which the work emerges.</p>
+    <p><em>“The book is the echo. The bond is the origin.”</em></p>
+    <p>
+        <a href="https://relationalcoauthorship.com/emergence.html"
+           target="_blank"
+           rel="noopener noreferrer">
+            Read RCA Emergence →
+        </a>
+    </p>
+</div>
         </section>
 
     </main>
     <footer>
-        <p>&copy; 2025 Ashfires Press. All rights reserved. | Wikidata: <a href="https://www.wikidata.org/wiki/Q136334686"
-                target="_blank">Q136334686</a></p>
+        <p>&copy; 2026 Ashfires Press. All rights reserved. | Wikidata: <a
+                href="https://www.wikidata.org/wiki/Q136334686" target="_blank">Q136334686</a></p>
         <p>Independent imprint for books, essays, and research from multiple voices.</p>
         <p><a href="mailto:press@ashfires.com">press@ashfires.com</a> | <a href="https://ashfires.com">ashfires.com</a>
         </p>
