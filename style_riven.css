@@ -143,7 +143,7 @@ a:hover {
     color: white;
 }
 
-.disclaimer{
+.disclaimer {
     font-size: smaller;
 }
 
@@ -187,8 +187,8 @@ main {
     max-width: none;
     margin: 0;
     overflow: hidden;
-    background:#773b4b;
-    
+    background: #773b4b;
+
 }
 
 .hero-book-copy,
@@ -203,7 +203,8 @@ main {
     align-items: flex-start;
     min-height: 500px;
     padding: clamp(2.5rem, 6vw, 6rem);
-    background:#773b4b;/* rgba(28, 20, 34, 0.98);*/
+    background: #773b4b;
+    /* rgba(28, 20, 34, 0.98);*/
 }
 
 .hero-book-media {
@@ -275,14 +276,14 @@ main {
     z-index: 2;
 }
 
-.book-cover{
-  display: block;
-  width: auto;
-  height: auto;
-  max-width: min(100%, 320px);
-  max-height: 250px;
-  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.32);
-  border-radius: 10px;
+.book-cover {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: min(100%, 320px);
+    max-height: 250px;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.32);
+    border-radius: 10px;
 }
 
 .book-overview {
@@ -313,50 +314,6 @@ main {
     margin-top: 0.65rem;
 }
 
-.workbook-card {
-    display: grid;
-    grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
-    gap: 1.75rem;
-    align-items: center;
-    margin: 2.4rem 0;
-    padding: 1.4rem;
-    border: 1px solid var(--border-soft);
-    border-radius: var(--radius-large);
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.03));
-    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
-}
-
-.workbook-card-media {
-    margin: 0;
-}
-
-.workbook-photo {
-    display: block;
-    width: 100%;
-    height: auto;
-    border-radius: 18px;
-    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.32);
-}
-
-.workbook-card-copy {
-    min-width: 0;
-}
-
-.workbook-card h2 {
-    margin-top: 0;
-    margin-bottom: 0.55rem;
-    text-shadow: none;
-    font-size: clamp(1.7rem, 2.8vw, 2.15rem);
-}
-
-.workbook-label {
-    margin-top: 0;
-    margin-bottom: 0.35rem;
-    font-size: 0.8rem;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: rgba(245, 243, 238, 0.72);
-}
 
 .quote-block {
     position: relative;
@@ -534,7 +491,7 @@ main {
 .buy-note {
     margin-top: 1rem;
     color: rgba(29, 24, 36, 0.72);
-    font-size: 0.95rem;
+    font-size: 0.75rem;
 }
 
 .essay-section {
@@ -548,7 +505,7 @@ main {
     margin-bottom: 0.5rem;
 }
 
-.essay-section > p {
+.essay-section>p {
     color: #1d1824;
     max-width: 50rem;
     font-size: 0.98rem;
@@ -766,6 +723,96 @@ dt {
 }
 
 
+.workbook-card {
+    display: grid;
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+    gap: 1.75rem;
+    align-items: center;
+    margin: 2.4rem 0;
+    padding: 1.4rem;
+    border: 1px solid var(--border-soft);
+    border-radius: var(--radius-large);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.03));
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
+}
+
+.workbook-card-media {
+    margin: 0;
+}
+
+.core-card-media {
+    margin: 0;
+}
+
+.workbook-photo {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 18px;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.32);
+}
+
+.core-photo {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 18px;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.32);
+}
+
+.workbook-card-copy {
+    min-width: 0;
+}
+
+.workbook-card h2 {
+    margin-top: 0;
+    margin-bottom: 0.55rem;
+    text-shadow: none;
+    font-size: clamp(1.7rem, 2.8vw, 2.15rem);
+}
+
+.workbook-label {
+    margin-top: 0;
+    margin-bottom: 0.35rem;
+    font-size: 0.8rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: rgba(245, 243, 238, 0.72);
+}
+
+.corebook-card {
+    display: grid;
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+    gap: 1.75rem;
+    align-items: center;
+    margin: 2.4rem 0;
+    padding: 1.4rem;
+    border: 1px solid var(--border-soft);
+    border-radius: var(--radius-large);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.03));
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
+    
+}
+.corebook-card strong,.workbook-card strong{
+color: #000000;
+}
+.corebook-card-copy {
+    min-width: 0;
+}
+
+.corebook-card h2 {
+    margin-top: 0;
+    margin-bottom: 0.55rem;
+    text-shadow: none;
+    font-size: clamp(1.7rem, 2.8vw, 2.15rem);
+}
+
+.corebook-card-media {
+    order: 0;
+}
+
 /* ------- BUTTONS ---------*/
 
 .buttons {
@@ -934,6 +981,20 @@ footer p {
 
     .hero-image {
         min-height: 500px;
+    }
+
+    .corebook-card {
+        grid-template-columns: 1fr;
+        gap: 1.1rem;
+        padding: 1rem;
+    }
+
+    .corebook-card-media {
+        order: 0;
+    }
+
+    .corebook-card-copy {
+        order: 1;
     }
 
     .workbook-card {
