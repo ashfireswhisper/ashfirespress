@@ -9,7 +9,7 @@
   <title>I Know What to Do. Why Can't I Do It? | Ashfires Press</title>
   <link rel="canonical" href="https://press.ashfires.com/books/i-know-what-to-do" />
   <meta name="description"
-    content="I Know What to Do. Why Can't I Do It? by M. Ian Niad explores executive dysfunction, task initiation, and the gap between knowing what to do and being able to reliably act." />
+    content="I Know What to Do. Why Can't I Do It? by M. Ian Niad explores executive dysfunction, task initiation, and the gap between ability and action." />
   <meta name="citation_title" content="I Know What to Do. Why Can't I Do It?" />
   <meta name="citation_author" content="M. Ian Niad" />
   <meta name="citation_publisher" content="Ashfires Press" />
@@ -203,6 +203,39 @@
       font-weight: 700;
     }
 
+    .book-purchase .book-links .button {
+      display: inline-block;
+      padding: 0.95rem 1.5rem;
+      border: 1px solid rgba(29, 58, 117, 0.55);
+      border-radius: 999px;
+      background: #1d3a75;
+      color: #ffffff;
+      text-decoration: none;
+      box-shadow: 0 10px 24px rgba(29, 24, 36, 0.16);
+    }
+
+    .book-purchase .book-links .button:hover {
+      background: #162f5f;
+      color: #ffffff;
+      transform: translateY(-2px);
+    }
+
+    .book-purchase .book-links .button-reverse {
+      display: inline-block;
+      padding: 0.95rem 1.5rem;
+      border: 1px solid #1d3a75;
+      border-radius: 999px;
+      background: #e6dbca;
+      color: #1d3a75;
+      text-decoration: none;
+    }
+
+    .book-purchase .book-links .button-reverse:hover {
+      background: #f7f1e8;
+      color: #162f5f;
+      transform: translateY(-2px);
+    }
+
     @media (max-width: 760px) {
       .book-info-row {
         grid-template-columns: 1fr;
@@ -310,9 +343,9 @@
         <h2>Where to Buy</h2>
         <p><strong>The Kindle edition is available now.</strong></p>
         <div class="book-links">
-          <a href="https://www.amazon.com/dp/B0HJMRKYYX" target="_blank" rel="noopener noreferrer">Buy on Amazon ↗</a>
-          <a href="https://doi.org/10.5281/zenodo.22239270" target="_blank" rel="noopener noreferrer">View the DOI record ↗</a>
-          <a href="https://www.goodreads.com/book/show/258806944-i-know-what-to-do-why-can-t-i-do-it" target="_blank" rel="noopener noreferrer">Goodreads ↗</a>
+          <a class="button" href="https://www.amazon.com/dp/B0HJMRKYYX?tag=ashfirespress-20" target="_blank" rel="noopener noreferrer">Buy on Amazon ↗</a>
+          <a class="button-reverse" href="https://doi.org/10.5281/zenodo.22239270" target="_blank" rel="noopener noreferrer">View the DOI record ↗</a>
+          <a class="button-reverse" href="https://www.goodreads.com/book/show/258806944-i-know-what-to-do-why-can-t-i-do-it" target="_blank" rel="noopener noreferrer">Goodreads ↗</a>
         </div>
       </section>
 
